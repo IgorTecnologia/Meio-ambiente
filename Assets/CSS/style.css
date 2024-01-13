@@ -9,7 +9,6 @@
     display: flex;
     flex-flow: row;
     justify-content: center;
-    align-items: center;
 }
 
 .p-30{
@@ -39,4 +38,131 @@
     color: gray;
 }
 
-/* Estilos de página index.html e preservação.html */
+:root{
+    --purple-200: #9a7bd1;
+    --purple-500: #6b36c8;
+    --purple-800: #441f88;
+
+    --black-800: #171717;
+
+    --gray-200: #cccccc;
+    --gray-400: #505861;
+
+    --white: #F9F9F9;
+
+    --green: #00FF00;
+
+    --blue: #0000FF;
+
+    --yellow: #FFFF00;
+}
+
+
+body{
+    background: var(--green);
+    color: var(--black-800);
+}
+.bg{
+    background: var(--blue);
+    color: var(--white);
+}
+
+body::-webkit-scrollbar {
+    /* largura da Scrollbar */
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    /* cor do plano de fundo da Scrollbar */
+    background: var(--gray-200);
+}
+
+body::-webkit-scrollbar-thumb {
+    /* cor do scroll */
+    background-color: var(--yellow);
+
+    /* borda do scroll */
+    border-radius: 20px;
+}
+
+html{
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+button, a{
+
+    cursor: pointer;
+}
+
+.btn {
+    text-align: center;
+    padding: 12px 32px;
+    background: none;
+    border: 1px solid var(--white);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background: var(--black-800);
+}
+
+.flex{
+
+    /*  Um elemento do lado do outro*/
+    display: flex;
+   
+    /* Eixo horizontal */
+    justify-content: left;  
+    
+    /* Eixo vertical */ 
+    align-items: center; 
+}
+
+.flex-column{
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+
+    /* Um elemento abaixo do outro*/ 
+    flex-direction: column; 
+}
+
+.menu_container {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--black-800);
+    border-bottom: 1px solid var(--purple-500);
+    filter: opacity(0.9);
+}
+
+.menu_container a {
+    font-size: 16px;
+    color: var(--purple-200);
+    font-weight: bold;
+}
+
+.menu_container a:hover {
+    color: var(--purple-500);
+}
+
+.menu_content {
+    max-width: 1120px;
+    padding: 0 24px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_lista {
+    list-style: none;
+    text-align: center;
+}
+.menu_lista li {
+    margin: 0 0 0 16px;
+}
